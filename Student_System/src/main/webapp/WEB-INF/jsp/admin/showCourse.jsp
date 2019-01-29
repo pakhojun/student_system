@@ -10,10 +10,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- 引入bootstrap -->
 	<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/theme/default/layer.css">
 	<!-- 引入JQuery  bootstrap.js-->
 	<script src="/js/jquery-3.2.1.min.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
-
+	<script src="/js/layer.js"></script>
 	<%--<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">--%>
 
 </head>
@@ -69,7 +70,7 @@
 									<td>${item.score}</td>
 									<td>
 										<button class="btn btn-default btn-xs btn-info" onClick="location.href='/course/editCourse?id=${item.courseid}'">修改</button>
-										<button class="btn btn-default btn-xs btn-danger btn-primary" onClick="location.href='/admin/removeCourse?id=${item.courseid}'">删除</button>
+										<button class="btn btn-default btn-xs btn-danger btn-primary" onclick="deleteCourse('${item.courseid}')">删除</button>
 										<!--弹出框-->
 									</td>
 								</tr>
@@ -142,5 +143,25 @@
         $("#sub").click(function () {
             $("#form1").submit();
         });
+
+
+        function deleteCourse(id){
+			layer.confirm('您是否要删除', {
+				btn: ['是','否'] //按钮
+			}, function(){
+				$.get("/course/delete",
+						{id:id },
+						function(data){
+							layer.alert(data.message);
+							location.reload();
+						});
+			},function () {
+
+			});
+
+		}
+
+
+
 	</script>
 </html>
