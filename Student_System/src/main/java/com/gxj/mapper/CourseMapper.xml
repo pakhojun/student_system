@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.gxj.mapper.CourseMapper">
+    <resultMap id="baseCourse" type="course">
+        <id column="courseID" property="courseid" jdbcType="INTEGER"></id>
+        <result column="courseName" property="coursename" jdbcType="VARCHAR"></result>
+        <result column="teacherID" property="teacherid" jdbcType="INTEGER"></result>
+        <result column="courseTime" property="coursetime" jdbcType="VARCHAR"></result>
+        <result column="classRoom" property="classroom" jdbcType="VARCHAR"></result>
+        <result column="courseWeek" property="courseweek" jdbcType="INTEGER"></result>
+        <result column="courseType" property="coursetype" jdbcType="VARCHAR"></result>
+        <result column="collegeID" property="collegeid" jdbcType="INTEGER"></result>
+        <result column="score" property="score" jdbcType="INTEGER"></result>
+    </resultMap>
+
+    <sql id="filedId" >
+        courseid,coursename,teacherid,coursetime,classroom,courseweek,coursetype,collegeid,score
+    </sql>
+
+   <!--public List<Course> findList();-->
+    <select id="findList" resultMap="baseCourse">
+        select * from course
+    </select>
+
+
+
+    <!-- public Integer count();-->
+    <select id="count" resultType="int">
+        select count(1) from course
+        <where>
+            <if test="findByName!=null">
+                courseName like concat("%",#{findByName},"%")
+            </if>
+        </where>
+    </select>
+
+    <!--public List<Course> findListByLimit(@Param("startIndex") Integer startIndex,@Param("pageSize") Integer pageSize);-->
+    <select id="findListByLimit" resultMap="baseCourse">
+        select <include refid="filedId"/>
+         from course limit #{startIndex,jdbcType=INTEGER} , #{pageSize,jdbcType=INTEGER}
+    </select>
+
+    <select id="findListByLimitAndName" resultMap="baseCourse">
+        select <include refid="filedId"/>
+        from course
+        <where>
+            <if test="findByName!=null">
+                courseName like "%"#{findByName}"%"
+            </if>
+        </where>
+         limit #{startIndex,jdbcType=INTEGER} , #{pageSize,jdbcType=INTEGER}
+    </select>
+</mapper>
