@@ -38,4 +38,9 @@ public class CourseServiceImpl implements CourseService {
         pageBean.setData(listByLimit);
         return pageBean;
     }
+
+    @Override
+    public void insert(Course course) {
+        courseMapper.insert(course);
+    }
 }

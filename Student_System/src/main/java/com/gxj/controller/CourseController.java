@@ -1,11 +1,16 @@
 package com.gxj.controller;
 
+import com.gxj.pojo.College;
 import com.gxj.pojo.Course;
+import com.gxj.pojo.Teacher;
+import com.gxj.service.CollegeService;
 import com.gxj.service.CourseService;
+import com.gxj.service.TeacherService;
 import com.gxj.vo.PageBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -18,6 +23,11 @@ public class CourseController {
     @Autowired
     private CourseService courseService;
 
+    @Autowired
+    private TeacherService teacherService;
+
+    @Autowired
+    private CollegeService collegeService;
 
     /*@RequestMapping("/findList")
     public String findList(Model model){
@@ -42,5 +52,31 @@ public class CourseController {
     }
 
 
+
+    @RequestMapping("/addCourse")
+    public String showAddPage(Model model){
+        List<Teacher> teacherList = teacherService.findList();
+        List<College> collegeList = collegeService.findList();
+        model.addAttribute("teacherList",teacherList);
+        model.addAttribute("collegeList",collegeList);
+        return "admin/addCourse";
+    }
+
+
+    @RequestMapping("/{page}")
+    public String showPage(@PathVariable("page") String page){
+        return "admin/"+page;
+    }
+
+    @RequestMapping("/addCourseInfo")
+    public String addCourseInfo(Course course){
+        try {
+            courseService.insert(course);
+            return "redirect:/course/findList";
+        }catch (Exception e){
+            e.printStackTrace();
+            return "/error";
+        }
+    }
 
 }

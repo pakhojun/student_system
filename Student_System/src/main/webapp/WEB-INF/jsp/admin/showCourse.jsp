@@ -35,7 +35,7 @@
 									<span class="input-group-addon btn" onclick="document.getElementById('form1').submit" id="sub">搜索</span>
 								</div>
 							</form>
-							<button class="btn btn-default col-md-2" style="margin-top: 20px" onClick="location.href='/admin/addCourse'">
+							<button class="btn btn-default col-md-2" style="margin-top: 20px" onClick="location.href='/course/addCourse'">
 								添加课程信息
 								<sapn class="glyphicon glyphicon-plus"/>
 							</button>

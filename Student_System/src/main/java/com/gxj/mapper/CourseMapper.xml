@@ -14,7 +14,8 @@
     </resultMap>
 
     <sql id="filedId" >
-        courseid,coursename,teacherid,coursetime,classroom,courseweek,coursetype,collegeid,score
+/*  courseid,coursename,teacherid,coursetime,classroom,courseweek,coursetype,collegeid,score*/
+        courseId,courseName,teacherId,courseTime,classRoom,courseWeek,courseType,collegeId,score
     </sql>
 
    <!--public List<Course> findList();-->
@@ -50,4 +51,10 @@
         </where>
          limit #{startIndex,jdbcType=INTEGER} , #{pageSize,jdbcType=INTEGER}
     </select>
+
+    <!-- public void insert(Course course);-->
+    <insert id="insert">
+        insert into course values (#{courseid},#{coursename},#{teacherid},#{coursetime},
+        #{classroom},#{courseweek},#{coursetype},#{collegeid},#{score} )
+    </insert>
 </mapper>
