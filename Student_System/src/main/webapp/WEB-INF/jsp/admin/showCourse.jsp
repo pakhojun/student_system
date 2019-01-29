@@ -35,7 +35,7 @@
 									<span class="input-group-addon btn" onclick="document.getElementById('form1').submit" id="sub">搜索</span>
 								</div>
 							</form>
-							<button class="btn btn-default col-md-2" style="margin-top: 20px" onClick="location.href='/admin/addCourse'">
+							<button class="btn btn-default col-md-2" style="margin-top: 20px" onClick="location.href='/course/addCourse'">
 								添加课程信息
 								<sapn class="glyphicon glyphicon-plus"/>
 							</button>
@@ -68,7 +68,7 @@
 									<td>${item.coursetype}</td>
 									<td>${item.score}</td>
 									<td>
-										<button class="btn btn-default btn-xs btn-info" onClick="location.href='/admin/editCourse?id=${item.courseid}'">修改</button>
+										<button class="btn btn-default btn-xs btn-info" onClick="location.href='/course/editCourse?id=${item.courseid}'">修改</button>
 										<button class="btn btn-default btn-xs btn-danger btn-primary" onClick="location.href='/admin/removeCourse?id=${item.courseid}'">删除</button>
 										<!--弹出框-->
 									</td>

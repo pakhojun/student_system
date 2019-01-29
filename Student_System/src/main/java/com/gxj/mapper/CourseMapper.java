@@ -29,4 +29,10 @@ public interface CourseMapper {
 
     public List<Course> findListByLimitAndName(@Param("startIndex") Integer startIndex,@Param("pageSize") Integer pageSize,@Param("findByName") String findByName);
 
+
+    public void insert(Course course);
+
+    public Course findOne(Integer id);
+
+    public void update(Course course);
 }

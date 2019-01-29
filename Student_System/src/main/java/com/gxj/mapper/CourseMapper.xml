@@ -14,7 +14,8 @@
     </resultMap>
 
     <sql id="filedId" >
-        courseid,coursename,teacherid,coursetime,classroom,courseweek,coursetype,collegeid,score
+/*  courseid,coursename,teacherid,coursetime,classroom,courseweek,coursetype,collegeid,score*/
+        courseId,courseName,teacherId,courseTime,classRoom,courseWeek,courseType,collegeId,score
     </sql>
 
    <!--public List<Course> findList();-->
@@ -50,4 +51,26 @@
         </where>
          limit #{startIndex,jdbcType=INTEGER} , #{pageSize,jdbcType=INTEGER}
     </select>
+
+    <!-- public void insert(Course course);-->
+    <insert id="insert">
+        insert into course values (#{courseid},#{coursename},#{teacherid},#{coursetime},
+        #{classroom},#{courseweek},#{coursetype},#{collegeid},#{score} )
+    </insert>
+
+
+    <!-- public Course findOne(Integer id);-->
+    <select id="findOne" resultMap="baseCourse">
+        select <include refid="filedId"/>
+        from course
+        where courseId=#{courseId}
+    </select>
+
+    <!--public void update(Course course);-->
+    <update id="update" >
+/*  courseid,coursename,teacherid,coursetime,classroom,courseweek,coursetype,collegeid,score*/
+        update course set coursename=#{coursename},teacherid=#{teacherid},
+        coursetime=#{coursetime},classroom=#{classroom},courseweek=#{courseweek},coursetype=#{coursetype},
+        collegeid=#{collegeid},score=#{score} where courseid=#{courseid}
+    </update>
 </mapper>
