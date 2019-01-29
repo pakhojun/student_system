@@ -43,4 +43,14 @@ public class CourseServiceImpl implements CourseService {
     public void insert(Course course) {
         courseMapper.insert(course);
     }
+
+    @Override
+    public Course findOne(Integer id) {
+        return courseMapper.findOne(id);
+    }
+
+    @Override
+    public void update(Course course) {
+        courseMapper.update(course);
+    }
 }

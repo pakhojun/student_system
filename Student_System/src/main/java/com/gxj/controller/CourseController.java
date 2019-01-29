@@ -62,6 +62,17 @@ public class CourseController {
         return "admin/addCourse";
     }
 
+    @RequestMapping("/editCourse")
+    public String editCourse(Integer id,Model model){
+        Course course = courseService.findOne(id);
+        model.addAttribute("course",course);
+        List<Teacher> teacherList = teacherService.findList();
+        List<College> collegeList = collegeService.findList();
+        model.addAttribute("teacherList",teacherList);
+        model.addAttribute("collegeList",collegeList);
+        return "admin/editCourse";
+    }
+
 
     @RequestMapping("/{page}")
     public String showPage(@PathVariable("page") String page){
@@ -77,6 +88,12 @@ public class CourseController {
             e.printStackTrace();
             return "/error";
         }
+    }
+
+    @RequestMapping("/editCourseInfo")
+    public String editCourseInfo(Course course){
+        courseService.update(course);
+        return "redirect:/course/findList";
     }
 
 }

@@ -57,4 +57,20 @@
         insert into course values (#{courseid},#{coursename},#{teacherid},#{coursetime},
         #{classroom},#{courseweek},#{coursetype},#{collegeid},#{score} )
     </insert>
+
+
+    <!-- public Course findOne(Integer id);-->
+    <select id="findOne" resultMap="baseCourse">
+        select <include refid="filedId"/>
+        from course
+        where courseId=#{courseId}
+    </select>
+
+    <!--public void update(Course course);-->
+    <update id="update" >
+/*  courseid,coursename,teacherid,coursetime,classroom,courseweek,coursetype,collegeid,score*/
+        update course set coursename=#{coursename},teacherid=#{teacherid},
+        coursetime=#{coursetime},classroom=#{classroom},courseweek=#{courseweek},coursetype=#{coursetype},
+        collegeid=#{collegeid},score=#{score} where courseid=#{courseid}
+    </update>
 </mapper>

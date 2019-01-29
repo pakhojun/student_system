@@ -31,4 +31,8 @@ public interface CourseMapper {
 
 
     public void insert(Course course);
+
+    public Course findOne(Integer id);
+
+    public void update(Course course);
 }

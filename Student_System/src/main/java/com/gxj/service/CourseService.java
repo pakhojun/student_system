@@ -14,4 +14,8 @@ public interface CourseService {
     public PageBean findListByLimit(Integer currentPage, Integer pageSize,String findByName);
 
     public void insert(Course course);
+
+    public Course findOne(Integer id);
+
+    public void update(Course course);
 }
