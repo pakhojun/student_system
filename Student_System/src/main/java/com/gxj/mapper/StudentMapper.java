@@ -19,4 +19,6 @@ public interface StudentMapper {
     public void update(Student student);
 
     public Student findOne(int id);
+
+    public void delete(int id);
 }

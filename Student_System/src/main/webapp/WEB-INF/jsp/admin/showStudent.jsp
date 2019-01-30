@@ -65,7 +65,7 @@
 									<td>${item.college.collegename}</td>
 									<td>
 										<button class="btn btn-default btn-xs btn-info" onClick="location.href='/student/editStudent?id=${item.student.userid}'">修改</button>
-										<button class="btn btn-default btn-xs btn-danger btn-primary" onClick="location.href='/admin/removeStudent?id='">删除</button>
+										<button class="btn btn-default btn-xs btn-danger btn-primary" onClick="location.href='/student/removeStudent?id=${item.student.userid}'">删除</button>
 										<!--弹出框-->
 									</td>
 								</tr>

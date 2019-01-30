@@ -88,4 +88,10 @@ public class StudentController {
         studentService.update(student);
         return "redirect:/student/findList";
     }
+
+    @RequestMapping("/removeStudent")
+    public String  removeStudent(int id){
+        studentService.delete(id);
+        return "redirect:/student/findList";
+    }
 }

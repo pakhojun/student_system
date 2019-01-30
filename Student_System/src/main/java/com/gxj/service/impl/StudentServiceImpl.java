@@ -81,5 +81,10 @@ public class StudentServiceImpl implements StudentService {
         return studentVo;
     }
 
+    @Override
+    public void delete(int id) {
+        studentMapper.delete(id);
+    }
+
 
 }
