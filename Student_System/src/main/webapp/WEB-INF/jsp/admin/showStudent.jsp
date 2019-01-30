@@ -64,7 +64,7 @@
 									<td><fmt:formatDate value="${item.student.grade}" dateStyle="medium" /></td>
 									<td>${item.college.collegename}</td>
 									<td>
-										<button class="btn btn-default btn-xs btn-info" onClick="location.href='/admin/editStudent?id='">修改</button>
+										<button class="btn btn-default btn-xs btn-info" onClick="location.href='/student/editStudent?id=${item.student.userid}'">修改</button>
 										<button class="btn btn-default btn-xs btn-danger btn-primary" onClick="location.href='/admin/removeStudent?id='">删除</button>
 										<!--弹出框-->
 									</td>

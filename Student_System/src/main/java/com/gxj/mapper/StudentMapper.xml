@@ -37,4 +37,14 @@
         #{userid},#{username},#{sex},#{birthyear},#{grade},#{collegeid})
     </insert>
 
+    <update id="update">
+        update student set userName=#{username},sex=#{sex},birthYear=#{birthyear},grade=#{grade},collegeID=#{collegeid}
+        where userID=#{userid}
+    </update>
+
+    <!--public Student findOne(int id);-->
+    <select id="findOne" resultType="student">
+        select * from student where userID=#{id}
+    </select>
+
 </mapper>

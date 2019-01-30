@@ -66,5 +66,20 @@ public class StudentServiceImpl implements StudentService {
         studentMapper.insert(student);
     }
 
+    @Override
+    public void update(Student student) {
+        studentMapper.update(student);
+    }
+
+    @Override
+    public StudentVo findOne(int id) {
+        Student student = studentMapper.findOne(id);
+        College college = collegeMapper.findOne(student.getCollegeid());
+        StudentVo studentVo=new StudentVo();
+        studentVo.setStudent(student);
+        studentVo.setCollege(college);
+        return studentVo;
+    }
+
 
 }

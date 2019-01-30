@@ -13,4 +13,8 @@ public interface StudentService {
     public PageBean findListByLimit(Integer currentPage, Integer pageSize,String findByName);
 
     public void insert(Student student);
+
+    public void update(Student student);
+
+    public StudentVo findOne(int id);
 }

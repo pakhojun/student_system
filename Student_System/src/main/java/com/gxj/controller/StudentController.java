@@ -73,4 +73,19 @@ public class StudentController {
         return "redirect:/student/findList";
     }
 
+
+    @RequestMapping("/editStudent")
+    public String showEditPage(int id,Model model){
+        StudentVo studentVo = studentService.findOne(id);
+        List<College> collegeList = collegeService.findList();
+        model.addAttribute("studentVo",studentVo);
+        model.addAttribute("collegeList",collegeList);
+        return "/admin/editStudent";
+    }
+
+    @RequestMapping("/editStudentInfo")
+    public String editStudent(Student student){
+        studentService.update(student);
+        return "redirect:/student/findList";
+    }
 }
