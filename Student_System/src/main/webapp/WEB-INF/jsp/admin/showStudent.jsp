@@ -29,9 +29,9 @@
 				    <div class="panel-heading">
 						<div class="row">
 					    	<h1 class="col-md-5">学生名单管理</h1>
-							<form class="bs-example bs-example-form col-md-5" role="form" style="margin: 20px 0 10px 0;" action="/admin/selectStudent" id="form1" method="post">
+							<form class="bs-example bs-example-form col-md-5" role="form" style="margin: 20px 0 10px 0;" action="/student/findList" id="form1" method="post">
 								<div class="input-group">
-									<input type="text" class="form-control" placeholder="请输入姓名" name="findByName">
+									<input type="text" class="form-control" placeholder="请输入姓名" name="findByName" value="${findByName}">
 									<span class="input-group-addon btn" id="sub">搜索</span>
 								</div>
 							</form>
@@ -55,17 +55,17 @@
 					            </tr>
 					        </thead>
 					        <tbody>
-							<c:forEach  items="${studentList}" var="item">
+							<c:forEach  items="${pageBean.data}" var="item">
 								<tr>
-									<td>${item.userid}</td>
-									<td>${item.username}</td>
-									<td>${item.sex}</td>
-									<td><fmt:formatDate value="${item.birthyear}" dateStyle="medium" /></td>
-									<td><fmt:formatDate value="${item.grade}" dateStyle="medium" /></td>
-									<td>${item.collegeName}</td>
+									<td>${item.student.userid}</td>
+									<td>${item.student.username}</td>
+									<td>${item.student.sex}</td>
+									<td><fmt:formatDate value="${item.student.birthyear}" dateStyle="medium" /></td>
+									<td><fmt:formatDate value="${item.student.grade}" dateStyle="medium" /></td>
+									<td>${item.college.collegename}</td>
 									<td>
-										<button class="btn btn-default btn-xs btn-info" onClick="location.href='/admin/editStudent?id=${item.userid}'">修改</button>
-										<button class="btn btn-default btn-xs btn-danger btn-primary" onClick="location.href='/admin/removeStudent?id=${item.userid}'">删除</button>
+										<button class="btn btn-default btn-xs btn-info" onClick="location.href='/admin/editStudent?id='">修改</button>
+										<button class="btn btn-default btn-xs btn-danger btn-primary" onClick="location.href='/admin/removeStudent?id='">删除</button>
 										<!--弹出框-->
 									</td>
 								</tr>
@@ -73,27 +73,36 @@
 					        </tbody>
 				    </table>
 				    <div class="panel-footer">
-						<c:if test="${pagingVO != null}">
 							<nav style="text-align: center">
 								<ul class="pagination">
-									<li><a href="/admin/showStudent?page=${pagingVO.upPageNo}">&laquo;上一页</a></li>
-									<li class="active"><a href="">${pagingVO.curentPageNo}</a></li>
-									<c:if test="${pagingVO.curentPageNo+1 <= pagingVO.totalCount}">
-										<li><a href="/admin/showStudent?page=${pagingVO.curentPageNo+1}">${pagingVO.curentPageNo+1}</a></li>
+
+									<c:if test="${pageBean.currentPage==1}">
+										<li><a href="javascript:void(0)">&laquo;上一页</a></li>
 									</c:if>
-									<c:if test="${pagingVO.curentPageNo+2 <= pagingVO.totalCount}">
-										<li><a href="/admin/showStudent?page=${pagingVO.curentPageNo+2}">${pagingVO.curentPageNo+2}</a></li>
+									<c:if test="${pageBean.currentPage!=1}">
+										<li><a href="/student/findList?currentPage=${pageBean.currentPage-1}&findByName=${findByName}">&laquo;上一页</a></li>
 									</c:if>
-									<c:if test="${pagingVO.curentPageNo+3 <= pagingVO.totalCount}">
-										<li><a href="/admin/showStudent?page=${pagingVO.curentPageNo+3}">${pagingVO.curentPageNo+3}</a></li>
+
+									<c:forEach begin="1" end="${pageBean.totalPage}" var="item">
+										<c:if test="${pageBean.currentPage==item}">
+											<li class="active"><a href="javascript:void(0)">${item}</a></li>
+										</c:if>
+										<c:if test="${pageBean.currentPage!=item}">
+											<li ><a href="/student/findList?currentPage=${item}&findByName=${findByName}">${item}</a></li>
+										</c:if>
+
+									</c:forEach>
+
+
+									<c:if test="${pageBean.currentPage==pageBean.totalPage}">
+										<li><a href="javascript:void(0)">下一页&raquo;</a></li>
 									</c:if>
-									<c:if test="${pagingVO.curentPageNo+4 <= pagingVO.totalCount}">
-										<li><a href="/admin/showStudent?page=${pagingVO.curentPageNo+4}">${pagingVO.curentPageNo+4}</a></li>
+									<c:if test="${pageBean.currentPage!=pageBean.totalPage}">
+										<li><a href="/student/findList?currentPage=${pageBean.currentPage+1}&findByName=${findByName}">下一页&raquo;</a></li>
 									</c:if>
-									<li><a href="/admin/showStudent?page=${pagingVO.totalCount}">最后一页&raquo;</a></li>
+
 								</ul>
 							</nav>
-						</c:if>
 				    </div>
 				</div>
 

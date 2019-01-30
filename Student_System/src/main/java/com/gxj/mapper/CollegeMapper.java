@@ -10,5 +10,5 @@ public interface CollegeMapper {
 
     public List<College> findList();
 
-
+    public College findOne(int id);
 }

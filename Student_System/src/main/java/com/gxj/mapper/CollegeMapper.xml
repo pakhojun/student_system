@@ -7,6 +7,9 @@
         select * from college
     </select>
 
-
+<!--public College findOne(int id);-->
+    <select id="findOne" resultType="college">
+        select * from college where collegeID=#{id}
+    </select>
 
 </mapper>
