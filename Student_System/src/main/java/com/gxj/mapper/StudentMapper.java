@@ -14,4 +14,5 @@ public interface StudentMapper {
 
     public List<Student> findListByLimit(@Param("startIndex") Integer startIndex,@Param("pageSize") Integer pageSize,@Param("findByName") String findByName);
 
+    public void insert(Student student);
 }

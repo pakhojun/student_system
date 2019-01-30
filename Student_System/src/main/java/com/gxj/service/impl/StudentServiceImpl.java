@@ -61,5 +61,10 @@ public class StudentServiceImpl implements StudentService {
         return pageBean;
     }
 
+    @Override
+    public void insert(Student student) {
+        studentMapper.insert(student);
+    }
+
 
 }

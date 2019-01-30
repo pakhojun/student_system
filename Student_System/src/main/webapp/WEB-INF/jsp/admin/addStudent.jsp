@@ -28,7 +28,7 @@
 						</div>
 				    </div>
 				    <div class="panel-body">
-						<form class="form-horizontal" role="form" action="/admin/addStudent" id="editfrom" method="post">
+						<form class="form-horizontal" role="form" action="/student/addStudentInfo" id="editfrom" method="post">
 							  <div class="form-group">
 							    <label for="inputEmail3" class="col-sm-2 control-label">学号</label>
 							    <div class="col-sm-10">

@@ -31,4 +31,10 @@
          limit #{startIndex} , #{pageSize}
     </select>
 
+
+    <insert id="insert">
+        insert into student values (
+        #{userid},#{username},#{sex},#{birthyear},#{grade},#{collegeid})
+    </insert>
+
 </mapper>

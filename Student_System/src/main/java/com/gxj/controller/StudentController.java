@@ -1,6 +1,8 @@
 package com.gxj.controller;
 
+import com.gxj.pojo.College;
 import com.gxj.pojo.Student;
+import com.gxj.service.CollegeService;
 import com.gxj.service.StudentService;
 import com.gxj.vo.PageBean;
 import com.gxj.vo.StudentVo;
@@ -20,6 +22,9 @@ public class StudentController {
 
     @Autowired
     private StudentService studentService;
+
+    @Autowired
+    private CollegeService collegeService;
 
     /*@RequestMapping("/findList")
     public String findList(Model model){
@@ -52,6 +57,20 @@ public class StudentController {
         model.addAttribute("pageBean",pageBean);
         model.addAttribute("findByName",findByName);
         return "/admin/showStudent";
+    }
+
+
+    @RequestMapping("/addStudent")
+    public String showAddStudentPage(Model model){
+        List<College> collegeList = collegeService.findList();
+        model.addAttribute("collegeList",collegeList);
+        return "/admin/addStudent";
+    }
+
+    @RequestMapping("/addStudentInfo")
+    public String addStudent(Student student){
+        studentService.insert(student);
+        return "redirect:/student/findList";
     }
 
 }
