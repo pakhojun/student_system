@@ -48,7 +48,7 @@
 
   <!-- name要和 applicationContext.xml中的对应的bean的id一致 -->
   <!--Shiro拦截器 shiro入口-->
-  <!--<filter>
+<filter>
     <filter-name>shiroFilter</filter-name>
     <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
     <init-param>
@@ -60,7 +60,7 @@
   <filter-mapping>
     <filter-name>shiroFilter</filter-name>
     <url-pattern>/*</url-pattern>
-  </filter-mapping>-->
+  </filter-mapping>
 
 
   <welcome-file-list>
