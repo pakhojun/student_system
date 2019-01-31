@@ -30,43 +30,53 @@
 						</div>
 				    </div>
 				    <div class="panel-body">
-						<form class="form-horizontal" role="form" action="/admin/editStudent" id="editfrom" method="post">
+						<form class="form-horizontal" role="form" action="/student/editStudentInfo" id="editfrom" method="post">
 							  <div class="form-group ">
 							    <label for="inputEmail3" class="col-sm-2 control-label" >学号</label>
 							    <div class="col-sm-10">
 							      <input readonly="readonly" type="number" class="form-control" id="inputEmail3" name="userid" placeholder="请输入学号"
-								  <c:if test='${student!=null}'>
-										 value="${student.userid}"
+								  <c:if test='${studentVo.student!=null}'>
+										 value="${studentVo.student.userid}"
 								  </c:if>>
 							    </div>
 							  </div>
 							  <div class="form-group">
 							    <label for="inputPassword3" class="col-sm-2 control-label">姓名</label>
 							    <div class="col-sm-10">
-							      <input type="text" class="form-control" id="inputPassword3" name="username" placeholder="请输入姓名" value="${student.username}">
+							      <input type="text" class="form-control" id="inputPassword3" name="username" placeholder="请输入姓名" value="${studentVo.student.username}">
 							    </div>
 							  </div>
 							  <div class="form-group">
 							    <label for="inputPassword3" class="col-sm-2 control-label">性别</label>
 							    <div class="col-sm-10">
 								    <label class="checkbox-inline">
-									   	<input type="radio" name="sex" value="男" checked>男
+										<c:if test="${studentVo.student.sex=='男'}">
+											<input type="radio" name="sex" value="男" checked="true" >男
+										</c:if>
+										<c:if test="${studentVo.student.sex!='男'}">
+											<input type="radio" name="sex" value="男"  >男
+										</c:if>
 									</label>
 									<label class="checkbox-inline">
-										<input type="radio" name="sex" value="女">女
+										<c:if test="${studentVo.student.sex=='女'}">
+											<input type="radio" name="sex" value="女" checked="true">女
+										</c:if>
+										<c:if test="${studentVo.student.sex!='女'}">
+											<input type="radio" name="sex" value="女" >女
+										</c:if>
 									</label>
 							    </div>
 							  </div>
 							  <div class="form-group">
 							    <label for="inputPassword3" class="col-sm-2 control-label">出生年份</label>
 							    <div class="col-sm-10">
-								    <input type="date" value="<fmt:formatDate value="${student.birthyear}" dateStyle="medium" pattern="yyyy-MM-dd" />" name="birthyear"/>
+								    <input type="date" value="<fmt:formatDate value="${studentVo.student.birthyear}" dateStyle="medium" pattern="yyyy-MM-dd" />" name="birthyear"/>
 							    </div>
 							  </div>
 							  <div class="form-group">
 							    <label for="inputPassword3" class="col-sm-2 control-label" name="grade">入学时间</label>
 							    <div class="col-sm-10">
-								    <input type="date" value="<fmt:formatDate value="${student.grade}" dateStyle="medium" pattern="yyyy-MM-dd" />" name="grade"/>
+								    <input type="date" value="<fmt:formatDate value="${studentVo.student.grade}" dateStyle="medium" pattern="yyyy-MM-dd" />" name="grade"/>
 							    </div>
 							  </div>
 							  <div class="form-group">
@@ -74,14 +84,20 @@
 							    <div class="col-sm-10">
 								    <select class="form-control" name="collegeid" id="college">
 										<c:forEach items="${collegeList}" var="item">
-											<option value="${item.collegeid}">${item.collegename}</option>
+											<c:if test="${item.collegeid==studentVo.college.collegeid}">
+												<option value="${item.collegeid}" selected="selected">${item.collegename}</option>
+											</c:if>
+											<c:if test="${item.collegeid!=studentVo.college.collegeid}">
+												<option value="${item.collegeid}">${item.collegename}</option>
+											</c:if>
+
 										</c:forEach>
 								    </select>
 							    </div>
 							  </div>
 							  <div class="form-group" style="text-align: center">
 								<button class="btn btn-default" type="submit">提交</button>
-								<button class="btn btn-default" type="reset">重置</button>
+								<button class="btn btn-default" type="reset" onclick="reset()">重置</button>
 							  </div>
 						</form>
 				    </div>
@@ -106,5 +122,9 @@
                 collegeSelect[i].selected = true;
             }
         }
+
+        function reset() {
+			$("#editfrom")[0].reset();
+		}
 	</script>
 </html>

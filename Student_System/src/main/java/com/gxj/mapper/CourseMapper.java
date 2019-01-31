@@ -35,4 +35,6 @@ public interface CourseMapper {
     public Course findOne(Integer id);
 
     public void update(Course course);
+
+    public void delete(Integer id);
 }

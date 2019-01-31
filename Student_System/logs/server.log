@@ -1,0 +1,944 @@
+
+
+[DEBUG] 2019-01-31 15:32:15,023 method:org.springframework.web.servlet.DispatcherServlet.initThemeResolver(DispatcherServlet.java:555)
+Unable to locate ThemeResolver with name 'themeResolver': using default [org.springframework.web.servlet.theme.FixedThemeResolver@e2eb74]
+
+
+[DEBUG] 2019-01-31 15:32:15,024 method:org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)
+Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+
+
+[DEBUG] 2019-01-31 15:32:15,024 method:org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)
+Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+
+
+[DEBUG] 2019-01-31 15:32:15,025 method:org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)
+Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+
+
+[DEBUG] 2019-01-31 15:32:15,025 method:org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)
+Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+
+
+[DEBUG] 2019-01-31 15:32:15,025 method:org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)
+Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+
+
+[DEBUG] 2019-01-31 15:32:15,025 method:org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)
+Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter'
+
+
+[DEBUG] 2019-01-31 15:32:15,027 method:org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)
+Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
+
+
+[DEBUG] 2019-01-31 15:32:15,028 method:org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)
+Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0'
+
+
+[DEBUG] 2019-01-31 15:32:15,028 method:org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)
+Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0'
+
+
+[DEBUG] 2019-01-31 15:32:15,029 method:org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:449)
+Creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator'
+
+
+[DEBUG] 2019-01-31 15:32:15,033 method:org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:485)
+Finished creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator'
+
+
+[DEBUG] 2019-01-31 15:32:15,033 method:org.springframework.web.servlet.DispatcherServlet.initRequestToViewNameTranslator(DispatcherServlet.java:692)
+Unable to locate RequestToViewNameTranslator with name 'viewNameTranslator': using default [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1ba8931]
+
+
+[DEBUG] 2019-01-31 15:32:15,034 method:org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)
+Returning cached instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+
+
+[DEBUG] 2019-01-31 15:32:15,035 method:org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:449)
+Creating instance of bean 'org.springframework.web.servlet.support.SessionFlashMapManager'
+
+
+[DEBUG] 2019-01-31 15:32:15,043 method:org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:485)
+Finished creating instance of bean 'org.springframework.web.servlet.support.SessionFlashMapManager'
+
+
+[DEBUG] 2019-01-31 15:32:15,044 method:org.springframework.web.servlet.DispatcherServlet.initFlashMapManager(DispatcherServlet.java:753)
+Unable to locate FlashMapManager with name 'flashMapManager': using default [org.springframework.web.servlet.support.SessionFlashMapManager@1277614]
+
+
+[DEBUG] 2019-01-31 15:32:15,044 method:org.springframework.jndi.JndiTemplate.lookup(JndiTemplate.java:150)
+Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+
+
+[DEBUG] 2019-01-31 15:32:15,045 method:org.springframework.jndi.JndiLocatorSupport.lookup(JndiLocatorSupport.java:101)
+Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+
+
+[DEBUG] 2019-01-31 15:32:15,045 method:org.springframework.jndi.JndiTemplate.lookup(JndiTemplate.java:150)
+Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+
+
+[DEBUG] 2019-01-31 15:32:15,046 method:org.springframework.jndi.JndiPropertySource.getProperty(JndiPropertySource.java:99)
+JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+
+
+[DEBUG] 2019-01-31 15:32:15,046 method:org.springframework.core.env.PropertySourcesPropertyResolver.getProperty(PropertySourcesPropertyResolver.java:91)
+Could not find key 'spring.liveBeansView.mbeanDomain' in any property source
+
+
+[DEBUG] 2019-01-31 15:32:15,046 method:org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:568)
+Published WebApplicationContext of servlet 'springmvc' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.springmvc]
+
+
+[INFO ] 2019-01-31 15:32:15,047 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'springmvc': initialization completed in 1402 ms
+
+
+[DEBUG] 2019-01-31 15:32:15,047 method:org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:141)
+Servlet 'springmvc' configured successfully
+
+
+[DEBUG] 2019-01-31 15:32:18,772 method:org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:865)
+DispatcherServlet with name 'springmvc' processing POST request for [/login]
+
+
+[DEBUG] 2019-01-31 15:32:18,778 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:310)
+Looking up handler method for path /login
+
+
+[DEBUG] 2019-01-31 15:32:18,784 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:317)
+Returning handler method [public java.lang.String com.gxj.controller.LoginController.login(com.gxj.pojo.Userlogin) throws java.lang.Exception]
+
+
+[DEBUG] 2019-01-31 15:32:18,785 method:org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)
+Returning cached instance of singleton bean 'loginController'
+
+
+[DEBUG] 2019-01-31 15:32:18,809 method:org.springframework.web.cors.DefaultCorsProcessor.processRequest(DefaultCorsProcessor.java:77)
+Skip CORS processing: request is from same origin
+
+
+[DEBUG] 2019-01-31 15:32:18,897 method:org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:110)
+Fetching JDBC Connection from DataSource
+
+
+[INFO ] 2019-01-31 15:32:18,965 method:com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getPoolManager(AbstractPoolBackedDataSource.java:527)
+Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hgevpda0196dt0y1gbaf40|fb1394, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hgevpda0196dt0y1gbaf40|fb1394, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/examination_system, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+
+
+[DEBUG] 2019-01-31 15:32:18,995 method:com.mchange.v2.cfg.MConfig.dumpToLogger(MConfig.java:101)
+Could not find resource path text file for path '/com/mchange/v2/cfg/vmConfigResourcePaths.txt'. Skipping.
+
+
+[DEBUG] 2019-01-31 15:32:18,996 method:com.mchange.v2.cfg.MConfig.dumpToLogger(MConfig.java:101)
+Added paths from resource path text file at '/mchange-config-resource-paths.txt'
+
+
+[DEBUG] 2019-01-31 15:32:18,996 method:com.mchange.v2.cfg.MConfig.dumpToLogger(MConfig.java:101)
+The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+
+
+[DEBUG] 2019-01-31 15:32:18,996 method:com.mchange.v2.cfg.MConfig.dumpToLogger(MConfig.java:101)
+The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+
+
+[DEBUG] 2019-01-31 15:32:18,997 method:com.mchange.v2.cfg.MConfig.dumpToLogger(MConfig.java:101)
+The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+
+
+[DEBUG] 2019-01-31 15:32:18,997 method:com.mchange.v2.cfg.MConfig.dumpToLogger(MConfig.java:101)
+The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+
+
+[DEBUG] 2019-01-31 15:32:19,007 method:com.mchange.v2.resourcepool.BasicResourcePool.incrementPendingAcquires(BasicResourcePool.java:476)
+incremented pending_acquires: 1
+
+
+[DEBUG] 2019-01-31 15:32:19,008 method:com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.<init>(BasicResourcePool.java:1842)
+Starting acquisition series. Incremented pending_acquires [1],  attempts_remaining: 30
+
+
+[DEBUG] 2019-01-31 15:32:19,008 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:236)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@c454: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@14fe359
+
+
+[DEBUG] 2019-01-31 15:32:19,009 method:com.mchange.v2.resourcepool.BasicResourcePool.incrementPendingAcquires(BasicResourcePool.java:476)
+incremented pending_acquires: 2
+
+
+[DEBUG] 2019-01-31 15:32:19,010 method:com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.<init>(BasicResourcePool.java:1842)
+Starting acquisition series. Incremented pending_acquires [2],  attempts_remaining: 30
+
+
+[DEBUG] 2019-01-31 15:32:19,011 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:236)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@c454: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@d12770
+
+
+[DEBUG] 2019-01-31 15:32:19,013 method:com.mchange.v2.resourcepool.BasicResourcePool.incrementPendingAcquires(BasicResourcePool.java:476)
+incremented pending_acquires: 3
+
+
+[DEBUG] 2019-01-31 15:32:19,014 method:com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.<init>(BasicResourcePool.java:1842)
+Starting acquisition series. Incremented pending_acquires [3],  attempts_remaining: 30
+
+
+[DEBUG] 2019-01-31 15:32:19,014 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:236)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@c454: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@7220b9
+
+
+[DEBUG] 2019-01-31 15:32:19,015 method:com.mchange.v2.resourcepool.BasicResourcePool.<init>(BasicResourcePool.java:360)
+com.mchange.v2.resourcepool.BasicResourcePool@bc6307 config: [start -> 3; min -> 3; max -> 15; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; max_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false; force_synchronous_checkins -> false]
+
+
+[DEBUG] 2019-01-31 15:32:19,015 method:com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.getPool(C3P0PooledConnectionPoolManager.java:401)
+Created new pool for auth, username (masked): 'ro******'.
+
+
+[DEBUG] 2019-01-31 15:32:19,015 method:com.mchange.v2.resourcepool.BasicResourcePool.prelimCheckoutResource(BasicResourcePool.java:625)
+acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+
+
+[DEBUG] 2019-01-31 15:32:19,016 method:com.mchange.v2.resourcepool.BasicResourcePool.awaitAvailable(BasicResourcePool.java:1441)
+awaitAvailable(): [unknown]
+
+
+[DEBUG] 2019-01-31 15:32:19,017 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1801)
+trace com.mchange.v2.resourcepool.BasicResourcePool@bc6307 [managed: 0, unused: 0, excluded: 0]
+
+
+[DEBUG] 2019-01-31 15:32:20,183 method:com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:284)
+com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@d3917.acquireResource() returning. 
+
+
+[DEBUG] 2019-01-31 15:32:20,183 method:com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:284)
+com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@d3917.acquireResource() returning. 
+
+
+[DEBUG] 2019-01-31 15:32:20,183 method:com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:284)
+com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@d3917.acquireResource() returning. 
+
+
+[DEBUG] 2019-01-31 15:32:20,185 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1801)
+trace com.mchange.v2.resourcepool.BasicResourcePool@bc6307 [managed: 1, unused: 1, excluded: 0]
+
+
+[DEBUG] 2019-01-31 15:32:20,185 method:com.mchange.v2.resourcepool.BasicResourcePool._decrementPendingAcquires(BasicResourcePool.java:497)
+decremented pending_acquires: 2
+
+
+[DEBUG] 2019-01-31 15:32:20,185 method:com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1885)
+Acquisition series terminated successfully. Decremented pending_acquires [2],  attempts_remaining: 30
+
+
+[DEBUG] 2019-01-31 15:32:20,186 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1801)
+trace com.mchange.v2.resourcepool.BasicResourcePool@bc6307 [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1201c74)
+
+
+[DEBUG] 2019-01-31 15:32:20,186 method:com.mchange.v2.resourcepool.BasicResourcePool._decrementPendingAcquires(BasicResourcePool.java:497)
+decremented pending_acquires: 1
+
+
+[DEBUG] 2019-01-31 15:32:20,186 method:com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1885)
+Acquisition series terminated successfully. Decremented pending_acquires [1],  attempts_remaining: 30
+
+
+[DEBUG] 2019-01-31 15:32:20,186 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1801)
+trace com.mchange.v2.resourcepool.BasicResourcePool@bc6307 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1201c74)
+
+
+[DEBUG] 2019-01-31 15:32:20,186 method:com.mchange.v2.resourcepool.BasicResourcePool._decrementPendingAcquires(BasicResourcePool.java:497)
+decremented pending_acquires: 0
+
+
+[DEBUG] 2019-01-31 15:32:20,186 method:com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1885)
+Acquisition series terminated successfully. Decremented pending_acquires [0],  attempts_remaining: 30
+
+
+[DEBUG] 2019-01-31 15:32:20,186 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1801)
+trace com.mchange.v2.resourcepool.BasicResourcePool@bc6307 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1201c74)
+
+
+[DEBUG] 2019-01-31 15:32:20,260 method:org.springframework.jdbc.datasource.DataSourceUtils.doReleaseConnection(DataSourceUtils.java:327)
+Returning JDBC Connection to DataSource
+
+
+[DEBUG] 2019-01-31 15:32:20,262 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:236)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@c454: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@181c35e
+
+
+[DEBUG] 2019-01-31 15:32:20,262 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1801)
+trace com.mchange.v2.resourcepool.BasicResourcePool@bc6307 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1201c74)
+
+
+[DEBUG] 2019-01-31 15:32:20,262 method:com.mchange.v2.c3p0.impl.NewProxyConnection.close(NewProxyConnection.java:101)
+com.mchange.v2.c3p0.impl.NewProxyConnection@7bca4b [wrapping: com.mysql.jdbc.JDBC4Connection@da90e6]: close() called more than once.
+
+
+[DEBUG] 2019-01-31 15:32:20,267 method:org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:110)
+Fetching JDBC Connection from DataSource
+
+
+[DEBUG] 2019-01-31 15:32:20,267 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1801)
+trace com.mchange.v2.resourcepool.BasicResourcePool@bc6307 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1201c74)
+
+
+[DEBUG] 2019-01-31 15:32:20,270 method:org.springframework.jdbc.datasource.DataSourceUtils.doReleaseConnection(DataSourceUtils.java:327)
+Returning JDBC Connection to DataSource
+
+
+[DEBUG] 2019-01-31 15:32:20,271 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:236)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@c454: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@11da68c
+
+
+[DEBUG] 2019-01-31 15:32:20,271 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1801)
+trace com.mchange.v2.resourcepool.BasicResourcePool@bc6307 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1201c74)
+
+
+[DEBUG] 2019-01-31 15:32:20,272 method:com.mchange.v2.c3p0.impl.NewProxyConnection.close(NewProxyConnection.java:101)
+com.mchange.v2.c3p0.impl.NewProxyConnection@1899f85 [wrapping: com.mysql.jdbc.JDBC4Connection@da90e6]: close() called more than once.
+
+
+[DEBUG] 2019-01-31 15:32:20,273 method:org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:110)
+Fetching JDBC Connection from DataSource
+
+
+[DEBUG] 2019-01-31 15:32:20,273 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1801)
+trace com.mchange.v2.resourcepool.BasicResourcePool@bc6307 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1201c74)
+
+
+[DEBUG] 2019-01-31 15:32:20,277 method:org.springframework.jdbc.datasource.DataSourceUtils.doReleaseConnection(DataSourceUtils.java:327)
+Returning JDBC Connection to DataSource
+
+
+[DEBUG] 2019-01-31 15:32:20,278 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:236)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@c454: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@1446e33
+
+
+[DEBUG] 2019-01-31 15:32:20,279 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1801)
+trace com.mchange.v2.resourcepool.BasicResourcePool@bc6307 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1201c74)
+
+
+[DEBUG] 2019-01-31 15:32:20,279 method:com.mchange.v2.c3p0.impl.NewProxyConnection.close(NewProxyConnection.java:101)
+com.mchange.v2.c3p0.impl.NewProxyConnection@c6b709 [wrapping: com.mysql.jdbc.JDBC4Connection@da90e6]: close() called more than once.
+
+
+[DEBUG] 2019-01-31 15:32:20,290 method:org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:110)
+Fetching JDBC Connection from DataSource
+
+
+[DEBUG] 2019-01-31 15:32:20,291 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1801)
+trace com.mchange.v2.resourcepool.BasicResourcePool@bc6307 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1201c74)
+
+
+[DEBUG] 2019-01-31 15:32:20,294 method:org.springframework.jdbc.datasource.DataSourceUtils.doReleaseConnection(DataSourceUtils.java:327)
+Returning JDBC Connection to DataSource
+
+
+[DEBUG] 2019-01-31 15:32:20,295 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:236)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@c454: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@bc2cb7
+
+
+[DEBUG] 2019-01-31 15:32:20,296 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1801)
+trace com.mchange.v2.resourcepool.BasicResourcePool@bc6307 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1201c74)
+
+
+[DEBUG] 2019-01-31 15:32:20,309 method:org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1670)
+Invoking afterPropertiesSet() on bean with name 'redirect:/course/findList'
+
+
+[DEBUG] 2019-01-31 15:32:20,310 method:org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1276)
+Rendering view [org.springframework.web.servlet.view.RedirectView: name 'redirect:/course/findList'; URL [/course/findList]] in DispatcherServlet with name 'springmvc'
+
+
+[DEBUG] 2019-01-31 15:32:20,311 method:org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+Successfully completed request
+
+
+[DEBUG] 2019-01-31 15:32:20,313 method:org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)
+Returning cached instance of singleton bean 'sessionFactory'
+
+
+[DEBUG] 2019-01-31 15:32:20,319 method:org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:110)
+Fetching JDBC Connection from DataSource
+
+
+[DEBUG] 2019-01-31 15:32:20,320 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1801)
+trace com.mchange.v2.resourcepool.BasicResourcePool@bc6307 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1201c74)
+
+
+[DEBUG] 2019-01-31 15:32:20,323 method:org.springframework.jdbc.datasource.DataSourceUtils.doReleaseConnection(DataSourceUtils.java:327)
+Returning JDBC Connection to DataSource
+
+
+[DEBUG] 2019-01-31 15:32:20,324 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:236)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@c454: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@1c7ec8e
+
+
+[DEBUG] 2019-01-31 15:32:20,324 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1801)
+trace com.mchange.v2.resourcepool.BasicResourcePool@bc6307 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1201c74)
+
+
+[DEBUG] 2019-01-31 15:32:20,325 method:com.mchange.v2.c3p0.impl.NewProxyConnection.close(NewProxyConnection.java:101)
+com.mchange.v2.c3p0.impl.NewProxyConnection@19a787d [wrapping: com.mysql.jdbc.JDBC4Connection@da90e6]: close() called more than once.
+
+
+[DEBUG] 2019-01-31 15:32:20,325 method:org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:110)
+Fetching JDBC Connection from DataSource
+
+
+[DEBUG] 2019-01-31 15:32:20,326 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1801)
+trace com.mchange.v2.resourcepool.BasicResourcePool@bc6307 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1201c74)
+
+
+[DEBUG] 2019-01-31 15:32:20,329 method:org.springframework.jdbc.datasource.DataSourceUtils.doReleaseConnection(DataSourceUtils.java:327)
+Returning JDBC Connection to DataSource
+
+
+[DEBUG] 2019-01-31 15:32:20,329 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:236)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@c454: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@1a6b3cb
+
+
+[DEBUG] 2019-01-31 15:32:20,330 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1801)
+trace com.mchange.v2.resourcepool.BasicResourcePool@bc6307 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1201c74)
+
+
+[DEBUG] 2019-01-31 15:32:20,330 method:org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:865)
+DispatcherServlet with name 'springmvc' processing GET request for [/course/findList]
+
+
+[DEBUG] 2019-01-31 15:32:20,330 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:310)
+Looking up handler method for path /course/findList
+
+
+[DEBUG] 2019-01-31 15:32:20,331 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:317)
+Returning handler method [public java.lang.String com.gxj.controller.CourseController.findList(java.lang.Integer,java.lang.Integer,org.springframework.ui.Model,java.lang.String)]
+
+
+[DEBUG] 2019-01-31 15:32:20,331 method:org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)
+Returning cached instance of singleton bean 'courseController'
+
+
+[DEBUG] 2019-01-31 15:32:20,332 method:org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:951)
+Last-Modified value for [/course/findList] is: -1
+
+
+[DEBUG] 2019-01-31 15:32:20,411 method:org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:110)
+Fetching JDBC Connection from DataSource
+
+
+[DEBUG] 2019-01-31 15:32:20,411 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1801)
+trace com.mchange.v2.resourcepool.BasicResourcePool@bc6307 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1201c74)
+
+
+[DEBUG] 2019-01-31 15:32:20,412 method:org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:114)
+Registering transaction synchronization for JDBC Connection
+
+
+[DEBUG] 2019-01-31 15:32:20,424 method:org.springframework.jdbc.datasource.DataSourceUtils.doReleaseConnection(DataSourceUtils.java:327)
+Returning JDBC Connection to DataSource
+
+
+[DEBUG] 2019-01-31 15:32:20,425 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:236)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@c454: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@1c8107f
+
+
+[DEBUG] 2019-01-31 15:32:20,425 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1801)
+trace com.mchange.v2.resourcepool.BasicResourcePool@bc6307 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1201c74)
+
+
+[DEBUG] 2019-01-31 15:32:20,426 method:com.mchange.v2.c3p0.impl.NewProxyConnection.close(NewProxyConnection.java:101)
+com.mchange.v2.c3p0.impl.NewProxyConnection@45e649 [wrapping: com.mysql.jdbc.JDBC4Connection@da90e6]: close() called more than once.
+
+
+[DEBUG] 2019-01-31 15:32:20,428 method:org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1670)
+Invoking afterPropertiesSet() on bean with name '/admin/showCourse'
+
+
+[DEBUG] 2019-01-31 15:32:20,429 method:org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1276)
+Rendering view [org.springframework.web.servlet.view.JstlView: name '/admin/showCourse'; URL [/WEB-INF/jsp//admin/showCourse.jsp]] in DispatcherServlet with name 'springmvc'
+
+
+[DEBUG] 2019-01-31 15:32:20,429 method:org.springframework.web.servlet.view.AbstractView.exposeModelAsRequestAttributes(AbstractView.java:432)
+Added model object 'courseList' of type [java.util.ArrayList] to request in view with name '/admin/showCourse'
+
+
+[DEBUG] 2019-01-31 15:32:20,429 method:org.springframework.web.servlet.view.AbstractView.exposeModelAsRequestAttributes(AbstractView.java:432)
+Added model object 'pageBean' of type [com.gxj.vo.PageBean] to request in view with name '/admin/showCourse'
+
+
+[DEBUG] 2019-01-31 15:32:20,429 method:org.springframework.web.servlet.view.AbstractView.exposeModelAsRequestAttributes(AbstractView.java:432)
+Added model object 'org.springframework.validation.BindingResult.pageBean' of type [org.springframework.validation.BeanPropertyBindingResult] to request in view with name '/admin/showCourse'
+
+
+[DEBUG] 2019-01-31 15:32:20,435 method:org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:166)
+Forwarding to resource [/WEB-INF/jsp//admin/showCourse.jsp] in InternalResourceView '/admin/showCourse'
+
+
+[DEBUG] 2019-01-31 15:32:20,520 method:org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+Successfully completed request
+
+
+[DEBUG] 2019-01-31 15:32:20,556 method:org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:865)
+DispatcherServlet with name 'springmvc' processing GET request for [/js/theme/default/layer.css]
+
+
+[DEBUG] 2019-01-31 15:32:20,557 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:310)
+Looking up handler method for path /js/theme/default/layer.css
+
+
+[DEBUG] 2019-01-31 15:32:20,562 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:320)
+Did not find handler method for [/js/theme/default/layer.css]
+
+
+[DEBUG] 2019-01-31 15:32:20,563 method:org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.lookupHandler(AbstractUrlHandlerMapping.java:192)
+Matching patterns for request [/js/theme/default/layer.css] are [/**]
+
+
+[DEBUG] 2019-01-31 15:32:20,565 method:org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.lookupHandler(AbstractUrlHandlerMapping.java:226)
+URI Template variables for request [/js/theme/default/layer.css] are {}
+
+
+[DEBUG] 2019-01-31 15:32:20,567 method:org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.getHandlerInternal(AbstractUrlHandlerMapping.java:140)
+Mapping [/js/theme/default/layer.css] to HandlerExecutionChain with handler [org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@12a4dbc] and 1 interceptor
+
+
+[DEBUG] 2019-01-31 15:32:20,569 method:org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:951)
+Last-Modified value for [/js/theme/default/layer.css] is: -1
+
+
+[DEBUG] 2019-01-31 15:32:20,570 method:org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1044)
+Null ModelAndView returned to DispatcherServlet with name 'springmvc': assuming HandlerAdapter completed request handling
+
+
+[DEBUG] 2019-01-31 15:32:20,570 method:org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+Successfully completed request
+
+
+[DEBUG] 2019-01-31 15:32:21,721 method:org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:110)
+Fetching JDBC Connection from DataSource
+
+
+[DEBUG] 2019-01-31 15:32:21,723 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1801)
+trace com.mchange.v2.resourcepool.BasicResourcePool@bc6307 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1201c74)
+
+
+[DEBUG] 2019-01-31 15:32:21,726 method:org.springframework.jdbc.datasource.DataSourceUtils.doReleaseConnection(DataSourceUtils.java:327)
+Returning JDBC Connection to DataSource
+
+
+[DEBUG] 2019-01-31 15:32:21,726 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:236)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@c454: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@19e8099
+
+
+[DEBUG] 2019-01-31 15:32:21,727 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1801)
+trace com.mchange.v2.resourcepool.BasicResourcePool@bc6307 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1201c74)
+
+
+[DEBUG] 2019-01-31 15:32:21,728 method:org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:110)
+Fetching JDBC Connection from DataSource
+
+
+[DEBUG] 2019-01-31 15:32:21,728 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1801)
+trace com.mchange.v2.resourcepool.BasicResourcePool@bc6307 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1201c74)
+
+
+[DEBUG] 2019-01-31 15:32:21,731 method:org.springframework.jdbc.datasource.DataSourceUtils.doReleaseConnection(DataSourceUtils.java:327)
+Returning JDBC Connection to DataSource
+
+
+[DEBUG] 2019-01-31 15:32:21,732 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:236)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@c454: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@1b10063
+
+
+[DEBUG] 2019-01-31 15:32:21,732 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1801)
+trace com.mchange.v2.resourcepool.BasicResourcePool@bc6307 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1201c74)
+
+
+[DEBUG] 2019-01-31 15:32:21,733 method:com.mchange.v2.c3p0.impl.NewProxyConnection.close(NewProxyConnection.java:101)
+com.mchange.v2.c3p0.impl.NewProxyConnection@196066b [wrapping: com.mysql.jdbc.JDBC4Connection@da90e6]: close() called more than once.
+
+
+[DEBUG] 2019-01-31 15:32:24,717 method:org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:110)
+Fetching JDBC Connection from DataSource
+
+
+[DEBUG] 2019-01-31 15:32:24,717 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1801)
+trace com.mchange.v2.resourcepool.BasicResourcePool@bc6307 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1201c74)
+
+
+[DEBUG] 2019-01-31 15:32:24,721 method:org.springframework.jdbc.datasource.DataSourceUtils.doReleaseConnection(DataSourceUtils.java:327)
+Returning JDBC Connection to DataSource
+
+
+[DEBUG] 2019-01-31 15:32:24,722 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:236)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@c454: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@4b1f49
+
+
+[DEBUG] 2019-01-31 15:32:24,722 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1801)
+trace com.mchange.v2.resourcepool.BasicResourcePool@bc6307 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1201c74)
+
+
+[DEBUG] 2019-01-31 15:32:24,723 method:org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:110)
+Fetching JDBC Connection from DataSource
+
+
+[DEBUG] 2019-01-31 15:32:24,723 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1801)
+trace com.mchange.v2.resourcepool.BasicResourcePool@bc6307 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1201c74)
+
+
+[DEBUG] 2019-01-31 15:32:24,727 method:org.springframework.jdbc.datasource.DataSourceUtils.doReleaseConnection(DataSourceUtils.java:327)
+Returning JDBC Connection to DataSource
+
+
+[DEBUG] 2019-01-31 15:32:24,728 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:236)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@c454: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@f8117d
+
+
+[DEBUG] 2019-01-31 15:32:24,729 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1801)
+trace com.mchange.v2.resourcepool.BasicResourcePool@bc6307 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1201c74)
+
+
+[DEBUG] 2019-01-31 15:32:24,729 method:org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:865)
+DispatcherServlet with name 'springmvc' processing GET request for [/course/findList]
+
+
+[DEBUG] 2019-01-31 15:32:24,730 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:310)
+Looking up handler method for path /course/findList
+
+
+[DEBUG] 2019-01-31 15:32:24,730 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:317)
+Returning handler method [public java.lang.String com.gxj.controller.CourseController.findList(java.lang.Integer,java.lang.Integer,org.springframework.ui.Model,java.lang.String)]
+
+
+[DEBUG] 2019-01-31 15:32:24,731 method:org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)
+Returning cached instance of singleton bean 'courseController'
+
+
+[DEBUG] 2019-01-31 15:32:24,731 method:org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:951)
+Last-Modified value for [/course/findList] is: -1
+
+
+[DEBUG] 2019-01-31 15:32:24,736 method:org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:110)
+Fetching JDBC Connection from DataSource
+
+
+[DEBUG] 2019-01-31 15:32:24,737 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1801)
+trace com.mchange.v2.resourcepool.BasicResourcePool@bc6307 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1201c74)
+
+
+[DEBUG] 2019-01-31 15:32:24,737 method:org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:114)
+Registering transaction synchronization for JDBC Connection
+
+
+[DEBUG] 2019-01-31 15:32:24,747 method:org.springframework.jdbc.datasource.DataSourceUtils.doReleaseConnection(DataSourceUtils.java:327)
+Returning JDBC Connection to DataSource
+
+
+[DEBUG] 2019-01-31 15:32:24,748 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:236)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@c454: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@2599b2
+
+
+[DEBUG] 2019-01-31 15:32:24,748 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1801)
+trace com.mchange.v2.resourcepool.BasicResourcePool@bc6307 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1201c74)
+
+
+[DEBUG] 2019-01-31 15:32:24,748 method:org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1276)
+Rendering view [org.springframework.web.servlet.view.JstlView: name '/admin/showCourse'; URL [/WEB-INF/jsp//admin/showCourse.jsp]] in DispatcherServlet with name 'springmvc'
+
+
+[DEBUG] 2019-01-31 15:32:24,748 method:org.springframework.web.servlet.view.AbstractView.exposeModelAsRequestAttributes(AbstractView.java:432)
+Added model object 'findByName' of type [java.lang.String] to request in view with name '/admin/showCourse'
+
+
+[DEBUG] 2019-01-31 15:32:24,750 method:org.springframework.web.servlet.view.AbstractView.exposeModelAsRequestAttributes(AbstractView.java:432)
+Added model object 'courseList' of type [java.util.ArrayList] to request in view with name '/admin/showCourse'
+
+
+[DEBUG] 2019-01-31 15:32:24,750 method:org.springframework.web.servlet.view.AbstractView.exposeModelAsRequestAttributes(AbstractView.java:432)
+Added model object 'pageBean' of type [com.gxj.vo.PageBean] to request in view with name '/admin/showCourse'
+
+
+[DEBUG] 2019-01-31 15:32:24,750 method:org.springframework.web.servlet.view.AbstractView.exposeModelAsRequestAttributes(AbstractView.java:432)
+Added model object 'org.springframework.validation.BindingResult.pageBean' of type [org.springframework.validation.BeanPropertyBindingResult] to request in view with name '/admin/showCourse'
+
+
+[DEBUG] 2019-01-31 15:32:24,751 method:org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:166)
+Forwarding to resource [/WEB-INF/jsp//admin/showCourse.jsp] in InternalResourceView '/admin/showCourse'
+
+
+[DEBUG] 2019-01-31 15:32:24,758 method:org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+Successfully completed request
+
+
+[DEBUG] 2019-01-31 15:32:24,813 method:org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:865)
+DispatcherServlet with name 'springmvc' processing GET request for [/js/theme/default/layer.css]
+
+
+[DEBUG] 2019-01-31 15:32:24,813 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:310)
+Looking up handler method for path /js/theme/default/layer.css
+
+
+[DEBUG] 2019-01-31 15:32:24,815 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:320)
+Did not find handler method for [/js/theme/default/layer.css]
+
+
+[DEBUG] 2019-01-31 15:32:24,815 method:org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.lookupHandler(AbstractUrlHandlerMapping.java:192)
+Matching patterns for request [/js/theme/default/layer.css] are [/**]
+
+
+[DEBUG] 2019-01-31 15:32:24,816 method:org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.lookupHandler(AbstractUrlHandlerMapping.java:226)
+URI Template variables for request [/js/theme/default/layer.css] are {}
+
+
+[DEBUG] 2019-01-31 15:32:24,816 method:org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.getHandlerInternal(AbstractUrlHandlerMapping.java:140)
+Mapping [/js/theme/default/layer.css] to HandlerExecutionChain with handler [org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@12a4dbc] and 1 interceptor
+
+
+[DEBUG] 2019-01-31 15:32:24,817 method:org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:951)
+Last-Modified value for [/js/theme/default/layer.css] is: -1
+
+
+[DEBUG] 2019-01-31 15:32:24,817 method:org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1044)
+Null ModelAndView returned to DispatcherServlet with name 'springmvc': assuming HandlerAdapter completed request handling
+
+
+[DEBUG] 2019-01-31 15:32:24,817 method:org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+Successfully completed request
+
+
+[DEBUG] 2019-01-31 15:32:25,549 method:org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:110)
+Fetching JDBC Connection from DataSource
+
+
+[DEBUG] 2019-01-31 15:32:25,549 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1801)
+trace com.mchange.v2.resourcepool.BasicResourcePool@bc6307 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1201c74)
+
+
+[DEBUG] 2019-01-31 15:32:25,553 method:org.springframework.jdbc.datasource.DataSourceUtils.doReleaseConnection(DataSourceUtils.java:327)
+Returning JDBC Connection to DataSource
+
+
+[DEBUG] 2019-01-31 15:32:25,554 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:236)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@c454: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@1c0f1ee
+
+
+[DEBUG] 2019-01-31 15:32:25,554 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1801)
+trace com.mchange.v2.resourcepool.BasicResourcePool@bc6307 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1201c74)
+
+
+[DEBUG] 2019-01-31 15:32:25,555 method:org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:110)
+Fetching JDBC Connection from DataSource
+
+
+[DEBUG] 2019-01-31 15:32:25,555 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1801)
+trace com.mchange.v2.resourcepool.BasicResourcePool@bc6307 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1201c74)
+
+
+[DEBUG] 2019-01-31 15:32:25,559 method:org.springframework.jdbc.datasource.DataSourceUtils.doReleaseConnection(DataSourceUtils.java:327)
+Returning JDBC Connection to DataSource
+
+
+[DEBUG] 2019-01-31 15:32:25,560 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:236)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@c454: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@1b6c346
+
+
+[DEBUG] 2019-01-31 15:32:25,560 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1801)
+trace com.mchange.v2.resourcepool.BasicResourcePool@bc6307 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1201c74)
+
+
+[DEBUG] 2019-01-31 15:32:25,561 method:org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:865)
+DispatcherServlet with name 'springmvc' processing GET request for [/course/findList]
+
+
+[DEBUG] 2019-01-31 15:32:25,562 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:310)
+Looking up handler method for path /course/findList
+
+
+[DEBUG] 2019-01-31 15:32:25,562 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:317)
+Returning handler method [public java.lang.String com.gxj.controller.CourseController.findList(java.lang.Integer,java.lang.Integer,org.springframework.ui.Model,java.lang.String)]
+
+
+[DEBUG] 2019-01-31 15:32:25,563 method:org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:251)
+Returning cached instance of singleton bean 'courseController'
+
+
+[DEBUG] 2019-01-31 15:32:25,563 method:org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:951)
+Last-Modified value for [/course/findList] is: -1
+
+
+[DEBUG] 2019-01-31 15:32:25,565 method:org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:110)
+Fetching JDBC Connection from DataSource
+
+
+[DEBUG] 2019-01-31 15:32:25,565 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1801)
+trace com.mchange.v2.resourcepool.BasicResourcePool@bc6307 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1201c74)
+
+
+[DEBUG] 2019-01-31 15:32:25,566 method:org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:114)
+Registering transaction synchronization for JDBC Connection
+
+
+[DEBUG] 2019-01-31 15:32:25,573 method:org.springframework.jdbc.datasource.DataSourceUtils.doReleaseConnection(DataSourceUtils.java:327)
+Returning JDBC Connection to DataSource
+
+
+[DEBUG] 2019-01-31 15:32:25,574 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:236)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@c454: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@10a6023
+
+
+[DEBUG] 2019-01-31 15:32:25,574 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1801)
+trace com.mchange.v2.resourcepool.BasicResourcePool@bc6307 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1201c74)
+
+
+[DEBUG] 2019-01-31 15:32:25,575 method:com.mchange.v2.c3p0.impl.NewProxyConnection.close(NewProxyConnection.java:101)
+com.mchange.v2.c3p0.impl.NewProxyConnection@1e4b84d [wrapping: com.mysql.jdbc.JDBC4Connection@da90e6]: close() called more than once.
+
+
+[DEBUG] 2019-01-31 15:32:25,576 method:org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1276)
+Rendering view [org.springframework.web.servlet.view.JstlView: name '/admin/showCourse'; URL [/WEB-INF/jsp//admin/showCourse.jsp]] in DispatcherServlet with name 'springmvc'
+
+
+[DEBUG] 2019-01-31 15:32:25,576 method:org.springframework.web.servlet.view.AbstractView.exposeModelAsRequestAttributes(AbstractView.java:432)
+Added model object 'findByName' of type [java.lang.String] to request in view with name '/admin/showCourse'
+
+
+[DEBUG] 2019-01-31 15:32:25,577 method:org.springframework.web.servlet.view.AbstractView.exposeModelAsRequestAttributes(AbstractView.java:432)
+Added model object 'courseList' of type [java.util.ArrayList] to request in view with name '/admin/showCourse'
+
+
+[DEBUG] 2019-01-31 15:32:25,578 method:org.springframework.web.servlet.view.AbstractView.exposeModelAsRequestAttributes(AbstractView.java:432)
+Added model object 'pageBean' of type [com.gxj.vo.PageBean] to request in view with name '/admin/showCourse'
+
+
+[DEBUG] 2019-01-31 15:32:25,578 method:org.springframework.web.servlet.view.AbstractView.exposeModelAsRequestAttributes(AbstractView.java:432)
+Added model object 'org.springframework.validation.BindingResult.pageBean' of type [org.springframework.validation.BeanPropertyBindingResult] to request in view with name '/admin/showCourse'
+
+
+[DEBUG] 2019-01-31 15:32:25,578 method:org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:166)
+Forwarding to resource [/WEB-INF/jsp//admin/showCourse.jsp] in InternalResourceView '/admin/showCourse'
+
+
+[DEBUG] 2019-01-31 15:32:25,581 method:org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+Successfully completed request
+
+
+[DEBUG] 2019-01-31 15:32:25,631 method:org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:865)
+DispatcherServlet with name 'springmvc' processing GET request for [/js/theme/default/layer.css]
+
+
+[DEBUG] 2019-01-31 15:32:25,632 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:310)
+Looking up handler method for path /js/theme/default/layer.css
+
+
+[DEBUG] 2019-01-31 15:32:25,634 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:320)
+Did not find handler method for [/js/theme/default/layer.css]
+
+
+[DEBUG] 2019-01-31 15:32:25,635 method:org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.lookupHandler(AbstractUrlHandlerMapping.java:192)
+Matching patterns for request [/js/theme/default/layer.css] are [/**]
+
+
+[DEBUG] 2019-01-31 15:32:25,636 method:org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.lookupHandler(AbstractUrlHandlerMapping.java:226)
+URI Template variables for request [/js/theme/default/layer.css] are {}
+
+
+[DEBUG] 2019-01-31 15:32:25,636 method:org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.getHandlerInternal(AbstractUrlHandlerMapping.java:140)
+Mapping [/js/theme/default/layer.css] to HandlerExecutionChain with handler [org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@12a4dbc] and 1 interceptor
+
+
+[DEBUG] 2019-01-31 15:32:25,636 method:org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:951)
+Last-Modified value for [/js/theme/default/layer.css] is: -1
+
+
+[DEBUG] 2019-01-31 15:32:25,637 method:org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1044)
+Null ModelAndView returned to DispatcherServlet with name 'springmvc': assuming HandlerAdapter completed request handling
+
+
+[DEBUG] 2019-01-31 15:32:25,638 method:org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+Successfully completed request
+
+
+[DEBUG] 2019-01-31 15:32:26,240 method:org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:110)
+Fetching JDBC Connection from DataSource
+
+
+[DEBUG] 2019-01-31 15:32:26,241 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1801)
+trace com.mchange.v2.resourcepool.BasicResourcePool@bc6307 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1201c74)
+
+
+[DEBUG] 2019-01-31 15:32:26,244 method:org.springframework.jdbc.datasource.DataSourceUtils.doReleaseConnection(DataSourceUtils.java:327)
+Returning JDBC Connection to DataSource
+
+
+[DEBUG] 2019-01-31 15:32:26,245 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:236)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@c454: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@1575fd9
+
+
+[DEBUG] 2019-01-31 15:32:26,245 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1801)
+trace com.mchange.v2.resourcepool.BasicResourcePool@bc6307 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1201c74)
+
+
+[DEBUG] 2019-01-31 15:32:26,246 method:com.mchange.v2.c3p0.impl.NewProxyConnection.close(NewProxyConnection.java:101)
+com.mchange.v2.c3p0.impl.NewProxyConnection@186eccc [wrapping: com.mysql.jdbc.JDBC4Connection@da90e6]: close() called more than once.
+
+
+[DEBUG] 2019-01-31 15:32:26,246 method:org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:110)
+Fetching JDBC Connection from DataSource
+
+
+[DEBUG] 2019-01-31 15:32:26,246 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1801)
+trace com.mchange.v2.resourcepool.BasicResourcePool@bc6307 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1201c74)
+
+
+[DEBUG] 2019-01-31 15:32:26,249 method:org.springframework.jdbc.datasource.DataSourceUtils.doReleaseConnection(DataSourceUtils.java:327)
+Returning JDBC Connection to DataSource
+
+
+[DEBUG] 2019-01-31 15:32:26,250 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner.postRunnable(ThreadPoolAsynchronousRunner.java:236)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner@c454: Adding task to queue -- com.mchange.v2.resourcepool.BasicResourcePool$1RefurbishCheckinResourceTask@19e969b
+
+
+[DEBUG] 2019-01-31 15:32:26,251 method:com.mchange.v2.resourcepool.BasicResourcePool.trace(BasicResourcePool.java:1801)
+trace com.mchange.v2.resourcepool.BasicResourcePool@bc6307 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1201c74)
+
+
+[DEBUG] 2019-01-31 15:32:26,251 method:org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:865)
+DispatcherServlet with name 'springmvc' processing GET request for [/admin/showTeacher]
+
+
+[DEBUG] 2019-01-31 15:32:26,252 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:310)
+Looking up handler method for path /admin/showTeacher
+
+
+[DEBUG] 2019-01-31 15:32:26,254 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:320)
+Did not find handler method for [/admin/showTeacher]
+
+
+[DEBUG] 2019-01-31 15:32:26,254 method:org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.lookupHandler(AbstractUrlHandlerMapping.java:192)
+Matching patterns for request [/admin/showTeacher] are [/**]
+
+
+[DEBUG] 2019-01-31 15:32:26,254 method:org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.lookupHandler(AbstractUrlHandlerMapping.java:226)
+URI Template variables for request [/admin/showTeacher] are {}
+
+
+[DEBUG] 2019-01-31 15:32:26,255 method:org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.getHandlerInternal(AbstractUrlHandlerMapping.java:140)
+Mapping [/admin/showTeacher] to HandlerExecutionChain with handler [org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler@12a4dbc] and 1 interceptor
+
+
+[DEBUG] 2019-01-31 15:32:26,255 method:org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:951)
+Last-Modified value for [/admin/showTeacher] is: -1
+
+
+[DEBUG] 2019-01-31 15:32:26,256 method:org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1044)
+Null ModelAndView returned to DispatcherServlet with name 'springmvc': assuming HandlerAdapter completed request handling
+
+
+[DEBUG] 2019-01-31 15:32:26,256 method:org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+Successfully completed request
+
+
+[DEBUG] 2019-01-31 15:32:28,928 method:com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector.run(ThreadPoolAsynchronousRunner.java:778)
+com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector@12fab90 -- Running DeadlockDetector[Exiting. No pending tasks.]

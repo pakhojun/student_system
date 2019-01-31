@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.gxj.mapper.StudentMapper">
+
+    <!-- public List<Student> findAll();-->
+    <select id="findAll" resultType="student">
+        select * from student
+    </select>
+
+
+    <!--public int count();
+
+    public List<Student> findListByLimit(@Param("startIndex") Integer startIndex,@Param("pageSize") Integer pageSize);-->
+
+    <select id="count" resultType="int">
+        select count(1) from student
+        <where>
+            <if test="findByName!=null">
+                userName like concat("%",#{findByName},"%")
+            </if>
+        </where>
+    </select>
+
+    <select id="findListByLimit" resultType="student">
+        select * from student
+        <where>
+            <if test="findByName!=null">
+                userName like concat("%",#{findByName},"%")
+            </if>
+        </where>
+         limit #{startIndex} , #{pageSize}
+    </select>
+
+
+    <insert id="insert">
+        insert into student values (
+        #{userid},#{username},#{sex},#{birthyear},#{grade},#{collegeid})
+    </insert>
+
+    <update id="update">
+        update student set userName=#{username},sex=#{sex},birthYear=#{birthyear},grade=#{grade},collegeID=#{collegeid}
+        where userID=#{userid}
+    </update>
+
+    <!--public Student findOne(int id);-->
+    <select id="findOne" resultType="student">
+        select * from student where userID=#{id}
+    </select>
+
+    <delete id="delete">
+        delete from student where userID=#{id}
+    </delete>
+
+</mapper>

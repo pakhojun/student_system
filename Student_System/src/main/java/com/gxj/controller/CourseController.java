@@ -13,8 +13,11 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Controller
 @RequestMapping("/course")
@@ -94,6 +97,23 @@ public class CourseController {
     public String editCourseInfo(Course course){
         courseService.update(course);
         return "redirect:/course/findList";
+    }
+
+
+    @RequestMapping("/delete")
+    @ResponseBody
+    public Map delete(Integer id){
+        Map map=new HashMap();
+        try {
+            courseService.delete(id);
+            map.put("message","删除成功");
+        } catch (Exception e) {
+            e.printStackTrace();
+            map.put("message","删除失败");
+        }
+
+
+        return map;
     }
 
 }

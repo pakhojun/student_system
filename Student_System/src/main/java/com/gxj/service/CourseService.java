@@ -18,4 +18,6 @@ public interface CourseService {
     public Course findOne(Integer id);
 
     public void update(Course course);
+
+    public void delete(Integer id);
 }
